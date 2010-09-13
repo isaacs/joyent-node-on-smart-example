@@ -1,0 +1,1 @@
+Just an example hello world site that can be run on a Joyent solaris smart machine easily.
