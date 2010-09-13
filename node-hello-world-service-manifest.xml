@@ -15,8 +15,8 @@
       <service_fmri value="svc:/system/filesystem/local"/>
     </dependency>
 
-    <method_context working_directory="/home/admin/hello-world" project="nodep">
-      <method_credential user="node" group="node" privileges='basic,net_privaddr'  />
+    <method_context working_directory="/home/admin/hello-world">
+      <method_credential user="admin" group="staff" privileges='basic,net_privaddr'  />
       <method_environment>
         <envvar name="PATH" value="/home/admin/local/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin"/>
         <envvar name="HOME" value="/home/admin"/>
