@@ -130,7 +130,7 @@ dive into Solaris service land.
 
 ## Define the Service
 
-"Services" in Solaris are a first-class citizen.  Each service has an
+"Services" in Solaris are first-class citizens in the OS.  Each service has an
 XML manifest file that defines it.  The `svccfg` command is used to add one of these
 config files to the system, and `svcadm` is used to administrate
 services once they're defined.
