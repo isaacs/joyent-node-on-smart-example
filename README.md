@@ -17,7 +17,7 @@ It'll save a bit of wgetting and curling.
 
 ## Step 1: Get Your SmartMachine
 
-Head on over to [Joyent](http://www.joyent.com/technology/smartmachines/) and provision
+Head on over to [Joyent](http://my.joyent.com/) and provision
 yourself up a shiny new SmartMachine.  I got mine at <http://8.19.35.165/>.
 To make this a bit easier, I set up a variable in my bash session so that I wouldn't
 have to keep typing that.
@@ -230,5 +230,6 @@ At this point, the logs should look like this:
     [ Sep 14 01:09:07 Enabled. ]
     [ Sep 14 01:09:07 Executing start method ("/home/admin/local/bin/node /home/admin/hello-world/server.js"). ]
 
-And hitting the site in a web browser shows it working.
+And hitting the site in a web browser or `curl http://127.0.0.1/` should
+show it working.
 
