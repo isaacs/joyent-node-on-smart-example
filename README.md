@@ -67,7 +67,7 @@ GNU-compatible version, we'll set that as a config option ahead of time:
     echo tar = gtar > ~/.npmrc
 
 You could also set the `TAR` environ, just like you set the `PATH` above, but
-this way is more explicit, and won't affect any other programs.
+this way won't affect any other programs.
 
 At this point, npm will work by default, without requiring any special
 privileges.  Go ahead and bootstrap it:
