@@ -18,11 +18,11 @@ It'll save a bit of wgetting and curling.
 ## Step 1: Get Your SmartMachine
 
 Head on over to [Joyent](http://www.joyent.com/technology/smartmachines/) and provision
-yourself up a shiny new SmartMachine.  I got mine at <http://isaacs.staging.joyent.us/>.
+yourself up a shiny new SmartMachine.  I got mine at <http://8.19.35.165/>.
 To make this a bit easier, I set up a variable in my bash session so that I wouldn't
 have to keep typing that.
 
-    export smart=isaacs.staging.joyent.us
+    export smart=8.19.35.165
 
 When your SmartMachine gets created, you'll get an email with a bunch of passwords.
 You'll probably want to [change those](http://wiki.joyent.com/smartmachine:change-passwords).
@@ -160,7 +160,7 @@ To stop the service is also predictably simple:
     svcadm disable node-hello-world-service
 
 Once you get tired of stopping and starting the service, start it one last time,
-and then [load up your SmartMachine URL in a web browser](http://isaacs.staging.joyent.us/).
+and then [load up your SmartMachine URL in a web browser](http://8.19.35.165/).
 If it says `Hello, world!`, then congratulations, you're done!  You can quit while
 you're ahead, or read on to learn a few tricks you can use when it breaks.
 
