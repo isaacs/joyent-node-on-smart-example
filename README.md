@@ -142,7 +142,8 @@ file for this purpose.  So, download that, and add it to the system configuratio
     wget http://github.com/isaacs/joyent-node-on-smart-example/raw/master/node-hello-world-service-manifest.xml
     svccfg import node-hello-world-service-manifest.xml
 
-If you've cloned the git repo, then you can of course `svccfg` it from there, instead.
+If you've cloned the [git repo](http://github.com/isaacs/joyent-node-on-smart-example),
+then you can of course `svccfg` it from there, instead.
 
 It's outside the scope of this article to go through all the different settings and what
 they do.  Most are pretty self-explanatory (folder paths and such).  For more info than
