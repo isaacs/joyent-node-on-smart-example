@@ -2,10 +2,12 @@
 # Installing a Node service on a Joyent SmartMachine
 
 This article will teach you how to get up and running with [Node.js](http://nodejs.org/)
-on a regular Solaris SmartMachine from [Joyent](http://www.joyent.com/)
+on a SmartOS SmartMachine from [Joyent](http://www.joyent.com/).  Since SmartOS
+uses Solaris under the hood, we'll be leveraging some of its awesome package powers.
 
 To make things a bit simpler, we're just going to create a server that does
-nothing but the normal `Hello World!` web server.
+nothing but the normal `Hello World!` web server.  You can of course us the same
+techniques for any more advanced node program.
 
 This article's content and the code samples are also available
 [on Github](http://github.com/isaacs/joyent-node-on-smart-example).  If you prefer to
