@@ -47,7 +47,7 @@ Change the admin password while you're in there:
 
 ## Installing node and npm
 
-Make sure that ~/local/bin is in your $PATH.  That's where we'll be
+Make sure that `~/local/bin` is in your `$PATH`.  That's where we'll be
 installing things, so that we don't have to use sudo.
 
     echo 'export PATH=$HOME/local/bin:${PATH}' >> ~/.bashrc
