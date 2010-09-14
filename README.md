@@ -59,7 +59,7 @@ Install node:
     mkdir node
     cd node
     curl http://nodejs.org/dist/node-latest.tar.gz | gtar xz --strip 1
-    ./configure --prefix=$HOME/local && make install
+    JOBS=1 ./configure --prefix=$HOME/local && make install
 
 This will download node and install it into the `~/local/bin` folder.
 
