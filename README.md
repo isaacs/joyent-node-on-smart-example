@@ -5,7 +5,7 @@ This article will teach you how to get up and running with [NodeJS](http://nodej
 on a regular Solaris SmartMachine from [Joyent](http://www.joyent.com/)
 
 To make things a bit simpler, we're just going to create a server that does
-nothing but the normal "Hello World" web server.
+nothing but the normal `Hello World!` web server.
 
 This article's content and the code samples are also available
 [on Github](http://github.com/isaacs/joyent-node-on-smart-example).  If you prefer to
@@ -89,7 +89,7 @@ If that's the case, run these commands to turn off those other servers:
     svcadm disable apache
     svcadm disable nginx
 
-## The "Hello, world!" program
+## The `Hello, world!` program
 
 For demonstration purposes, we'll just write a little hello world program.
 
@@ -123,7 +123,7 @@ Let's make sure everything is kosher at this point.
     Password:
     waiting to say hello.
 
-Then hit your SmartMachine URL and make sure it says "Hello, world!"
+Then hit your SmartMachine URL and make sure it says `Hello, world!`
 
 If anything is broken, now's the time to fix it, because we're about to
 dive into Solaris service land.
