@@ -17,7 +17,7 @@ It'll save a bit of wgetting and curling.
 
 ## Step 1: Get Your SmartMachine
 
-Head on over to [Joyent](http://www.joyent.com/technology/smartmachines/) and privision
+Head on over to [Joyent](http://www.joyent.com/technology/smartmachines/) and provision
 yourself up a shiny new SmartMachine.  I got mine at <http://isaacs.staging.joyent.us/>.
 To make this a bit easier, I set up a variable in my bash session so that I wouldn't
 have to keep typing that.
@@ -161,7 +161,7 @@ To stop the service is also predictably simple:
 Once you get tired of stopping and starting the service, start it one last time,
 and then [load up your SmartMachine URL in a web browser](http://isaacs.staging.joyent.us/).
 If it says `Hello, world!`, then congratulations, you're done!  You can quit while
-you're ahead, or read on to learn what to do when it breaks.
+you're ahead, or read on to learn a few tricks you can use when it breaks.
 
 ## Troubleshooting
 
@@ -217,7 +217,7 @@ you can restart it by doing the following:
     svcadm disable node-hello-world-service
     svcadm enable node-hello-world-service
 
-Note that, once you go into maintenance mode, your service must be disabled
+Note that once you go into maintenance mode, your service must be disabled
 before it can be re-enabled.
 
 At this point, the logs should look like this:
