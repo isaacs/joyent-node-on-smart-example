@@ -1,7 +1,7 @@
 
 # Installing a Node service on a Joyent SmartMachine
 
-This article will teach you how to get up and running with [NodeJS](http://nodejs.org/)
+This article will teach you how to get up and running with [Node.js](http://nodejs.org/)
 on a regular Solaris SmartMachine from [Joyent](http://www.joyent.com/)
 
 To make things a bit simpler, we're just going to create a server that does
