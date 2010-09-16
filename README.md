@@ -49,27 +49,28 @@ Change the admin password while you're in there:
 
 ## Installing node and npm
 
-Make sure that `~/local/bin` is in your `$PATH`.  That's where we'll be
-installing things, so that we don't have to use sudo.
+Make sure that `~/local/bin` is in your `$PATH`.  That's where we'll have
+npm install things, so that we don't have to use sudo.
 
     echo 'export PATH=$HOME/local/bin:${PATH}' >> ~/.bashrc
 
 Install node:
 
-    mkdir node
-    cd node
-    curl http://nodejs.org/dist/node-latest.tar.gz | gtar xz --strip 1
-    JOBS=1 ./configure --prefix=$HOME/local && make install
-
-This will download node and install it into the `~/local/bin` folder.
+    sudo pkgin update
+    sudo pkgin install nodejs
 
 Because Solaris has a slightly different `tar` program, and npm expects the
 GNU-compatible version, we'll set that as a config option ahead of time:
 
-    echo tar = gtar > ~/.npmrc
+    echo tar = gtar >> ~/.npmrc
 
-You could also set the `TAR` environ, just like you set the `PATH` above, but
-this way won't affect any other programs.
+Because we've installed node in a global location, we also need to tell npm
+where to put modules and executables.  Otherwise you have to use sudo with
+npm, which is very not recommended.
+
+    echo root = $HOME"/.node_libraries" >> ~/.npmrc
+    echo binroot = $HOME"/local/bin" >> ~/.npmrc
+    echo manroot = $HOME"/local/share/man" >> ~/.npmrc
 
 At this point, npm will work by default, without requiring any special
 privileges.  Go ahead and bootstrap it:
@@ -119,7 +120,7 @@ Save that to `~/hello-world/server.js`.
 Let's make sure everything is kosher at this point.
 
     $ which node
-    /home/admin/local/bin/node
+    /opt/local/bin/node
     
     $ sudo node hello-world/server.js
     Password:
