@@ -26,7 +26,7 @@
     <exec_method
       type="method"
       name="start"
-      exec="/home/admin/local/bin/node /home/admin/hello-world/server.js"
+      exec="/opt/local/bin/node /home/admin/hello-world/server.js"
       timeout_seconds="60"/>
 
     <exec_method
