@@ -1,4 +1,3 @@
-
 # Installing a Node service on a Joyent SmartMachine
 
 This article will teach you how to get up and running with [Node.js](http://nodejs.org/)
@@ -89,8 +88,8 @@ so that they don't get in the way.
 
 If that's the case, run these commands to turn off those other servers:
 
-    svcadm disable apache
-    svcadm disable nginx
+    sudo svcadm disable apache
+    sudo svcadm disable nginx
 
 ## The `Hello, world!` program
 
@@ -143,7 +142,7 @@ I went ahead and created a
 file for this purpose.  So, download that, and add it to the system configuration:
 
     wget http://github.com/isaacs/joyent-node-on-smart-example/raw/master/node-hello-world-service-manifest.xml
-    svccfg import node-hello-world-service-manifest.xml
+    sudo svccfg import node-hello-world-service-manifest.xml
 
 If you've cloned the [git repo](http://github.com/isaacs/joyent-node-on-smart-example),
 then you can of course `svccfg` it from there, instead.
@@ -156,11 +155,11 @@ you ever wanted to know about smf template files, see `man 5 smf_template`.
 
 Starting a service is a simple one-liner:
 
-    svcadm enable node-hello-world-service
+    sudo svcadm enable node-hello-world-service
 
 To stop the service is also predictably simple:
 
-    svcadm disable node-hello-world-service
+    sudo svcadm disable node-hello-world-service
 
 Once you get tired of stopping and starting the service, start it one last time,
 and then [load up your SmartMachine URL in a web browser](http://8.19.35.165/).
